@@ -1,13 +1,13 @@
 {
-  "name": "xhunter-server",
+  "name": "Payload server",
   "version": "1.0.0",
-  "description": "backbone for xhunter app",
+  "description": "app server",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
   "keywords": [
-    "xhunter-server"
+    "payload server"
   ],
   "author": "anirudhmalik",
   "license": "MIT",
