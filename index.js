@@ -24,7 +24,7 @@ server.listen(process.env.PORT || port, (err) => {
   log('Server Started : ' + port);
 });
 
-app.get('/', (req, res) => res.send('Server is Running'));
+app.get('/', (req, res) => res.send('Server is Runnnnnnnnnnnnnnning'));
 
 io.on('connection', (socket) => {
   socket.on('adminJoin', () => {
